@@ -1,0 +1,165 @@
+{
+    "lineItems": [{
+        "_type": "PRODUCT",
+        "_id": "0b177989-37e3-4688-9c50-0d12d94ff587",
+        "_ref": "ffe58227-7e82-4643-8ff2-f74de3acd334",
+        "name": "Moscovium",
+        "details": {
+            "sku": "115_Mc",
+            "essentialFeatures": "essential features",
+            "_links": {
+                "product": {
+                    "href": "http://localhost/$%7Bng.api-base-path/product-view/products/ffe58227-7e82-4643-8ff2-f74de3acd334?locale=de-DE"
+                },
+                "default-image-data": {
+                    "href": "http://localhost/api/storage/images/P7120104.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
+                    "templated": true
+                }
+            }
+        },
+        "quantity": {
+            "value": 1,
+            "unit": "PIECE"
+        },
+        "singleItemPrice": {
+            "taxModel": "NET",
+            "amount": "EUR 49.99"
+        },
+        "lineItemPrice": {
+            "taxModel": "NET",
+            "amount": "EUR 49.99"
+        },
+        "_links": {
+            "self": {
+                "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/line-items/0b177989-37e3-4688-9c50-0d12d94ff587"
+            }
+        }
+    }],
+    "shippingLineItem": {
+        "shippingMethod": {
+            "name": "Fedex",
+            "description": "only in the land of the free and the home of the braves",
+            "taxClass": "REGULAR",
+            "price": {
+                "taxModel": "NET",
+                "amount": "EUR 2.00"
+            },
+            "serviceableCountries": ["US"],
+            "freeShippingAmount": null,
+            "_id": "1d075427-084e-4c39-b6f7-619851790a63"
+        },
+        "lineItemPrice": {
+            "taxModel": "NET",
+            "amount": "EUR 2.00"
+        }
+    },
+    "paymentLineItem": {
+        "paymentMethod": {
+            "name": "Pay me",
+            "description": "just US",
+            "taxClass": "REGULAR",
+            "discountOrFee": {
+                "type": "ABSOLUTE",
+                "absoluteValue": {
+                    "taxModel": "GROSS",
+                    "amount": "EUR 2.00"
+                },
+                "percentageValue": null
+            },
+            "position": 1,
+            "serviceableCountries": ["US"],
+            "minimumOrderValue": null,
+            "_id": "b3a743ee-b7eb-49b3-8aff-efa287652c9f"
+        },
+        "lineItemPrice": {
+            "taxModel": "GROSS",
+            "amount": "EUR 2.00"
+        }
+    },
+    "billingAddress": {
+        "salutation": "Dear",
+        "gender": "FEMALE",
+        "company": "epages",
+        "title": "Mrs.",
+        "firstName": "Lisa",
+        "middleName": "A.",
+        "surName": "Smith",
+        "street": "Cardinal Drive",
+        "houseNumber": "2",
+        "street2": "Apartment 2a",
+        "addressExtension": "c/o Mrs. Anne Doe",
+        "postalCode": "61109",
+        "city": "Rockford",
+        "country": "US",
+        "state": "IL",
+        "email": "lsmith@some.de",
+        "phone": "+15417543010",
+        "mobile": "+12125550018",
+        "vatId": "123456789",
+        "taxNumber": "123-34-6789",
+        "birthDate": "1985-03-20"
+    },
+    "shippingAddress": {
+        "salutation": "Dear",
+        "gender": "FEMALE",
+        "company": "epages",
+        "title": "Mrs.",
+        "firstName": "Lisa",
+        "middleName": "A.",
+        "surName": "Smith",
+        "street": "Cardinal Drive",
+        "houseNumber": "2",
+        "street2": "Apartment 2a",
+        "addressExtension": "c/o Mrs. Anne Doe",
+        "postalCode": "61109",
+        "city": "Rockford",
+        "country": "US",
+        "state": "IL",
+        "email": "lsmith@some.de",
+        "phone": "+15417543010",
+        "mobile": "+12125550018",
+        "doorCode": "0815"
+    },
+    "total": {
+        "taxModel": "NET",
+        "amount": "EUR 53.99"
+    },
+    "minimumOrderValue": {
+        "taxModel": "NET",
+        "amount": "EUR 0.00"
+    },
+    "checkoutState": {
+        "shippingMethodValid": true,
+        "paymentMethodValid": true,
+        "billingAddressSet": true,
+        "priceValidToOrder": true,
+        "readyToOrder": true
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4"
+        },
+        "line-items": {
+            "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/line-items"
+        },
+        "shipping-method": {
+            "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/shipping-methods/current"
+        },
+        "payment-method": {
+            "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/payment-methods/current"
+        },
+        "shipping-method-default": {
+            "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/shipping-methods/default"
+        },
+        "payment-method-default": {
+            "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/payment-methods/default"
+        },
+        "billing-address": {
+            "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/billing-address"
+        },
+        "shipping-address": {
+            "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/shipping-address"
+        }
+    },
+    "_id": "762e5a02-68e7-423c-867b-97a9df6684c4"
+}

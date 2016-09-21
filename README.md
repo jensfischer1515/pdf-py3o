@@ -59,6 +59,19 @@ $ cat src/main/resources/invoice/invoice.json | java -jar build/libs/pdf-rendere
 $ open invoice.pdf
 ```
 
+### cart.json
+
+```
+$ http --form --output cart.pdf \
+     POST http://py3o.docker-machine.epages.works:8765/form \
+     targetformat=pdf \
+     tmpl_file@cart.odt \
+     image_mapping=@src/main/resources/invoice/image_mapping.json \
+     logo@src/main/resources/invoice/test.png \
+     datadict=@cart.json
+$ open cart.pdf
+```
+
 
 ## Links
 
