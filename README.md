@@ -26,9 +26,9 @@ Simple PDF using custom data:
 http --form --output fusion2pdf.pdf \
      POST http://py3o.docker-machine.epages.works:8765/form \
      targetformat=pdf \
-     tmpl_file@fusion2pdf.odt \
+     tmpl_file@src/main/resources/fusion2pdf.odt \
      image_mapping='{}' \
-     datadict=@fusion2pdf.json
+     datadict=@src/test/resources/fusion2pdf.json
 ```
 
 Invoice PDF with custom logo and a variable number of line items:
@@ -37,10 +37,10 @@ Invoice PDF with custom logo and a variable number of line items:
 http --form --output invoice.pdf \
      POST http://py3o.docker-machine.epages.works:8765/form \
      targetformat=pdf \
-     tmpl_file@invoice.odt \
-     image_mapping=@image_mapping.json \
-     logo@test.png \
-     datadict=@invoice.json
+     tmpl_file@src/main/resources/invoice.odt \
+     image_mapping=@src/test/resources/image_mapping.json \
+     logo@src/test/resources/test.png \
+     datadict=@src/test/resources/invoice.json
 ```
 
 
