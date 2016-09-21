@@ -1,4 +1,4 @@
-# ng-pdf
+# pdf-py3o
 
 Rendering PDFs out of OpenOffice/LibreOffice document templates (*.odt).
 
@@ -18,13 +18,17 @@ open http://py3o.docker-machine.epages.works:8765/
 
 ## Render PDF
 
+Using [httpie](https://github.com/jkbrzt/httpie) command line client:
+
 ```
-http --verbose --debug --form --output fusion2pdf.pdf POST http://py3o.docker-machine.epages.works:8765/form \
-    image1@test.png \
-    tmpl_file@fusion2pdf.odt \
-    targetformat=pdf \
-    datadict='{"document":{"person_surname":"Fischer", "person_name":"Jens", "person_company":"ePages GmbH", "person_url":"http://www.epages.com"}}' \
-    image_mapping='{"image1":"logo"}'
+http --verbose --debug --form \
+     --output fusion2pdf.pdf \
+     POST http://py3o.docker-machine.epages.works:8765/form \
+     targetformat=pdf \
+     tmpl_file@fusion2pdf.odt \
+     image_mapping=@image_mapping.json \
+     logo@test.png \
+     datadict=@datadict.json
 ```
 
 ```
