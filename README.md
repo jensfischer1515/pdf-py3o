@@ -31,6 +31,7 @@ $ http --form --output fusion2pdf.pdf \
      tmpl_file@fusion2pdf.odt \
      image_mapping='{}' \
      datadict=@fusion2pdf.json
+$ open fusion2pdf.pdf
 ```
 
 ### Advanced
@@ -45,6 +46,7 @@ $ http --form --output invoice.pdf \
      image_mapping=@src/main/resources/invoice/image_mapping.json \
      logo@src/main/resources/invoice/test.png \
      datadict=@src/main/resources/invoice/invoice.json
+$ open invoice.pdf
 ```
 
 ### Java command line client
@@ -54,6 +56,7 @@ Uses Spring Boot and Apache HttpClient as an example how to connect to the py3o.
 ```
 $ ./gradlew clean build
 $ cat src/main/resources/invoice/invoice.json | java -jar build/libs/pdf-renderer.jar > invoice.pdf
+$ open invoice.pdf
 ```
 
 

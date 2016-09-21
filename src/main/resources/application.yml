@@ -7,6 +7,9 @@ logging:
     root: 'INFO'
     org.springframework: 'WARN'
     com.epages.pdf: 'INFO'
+    org.apache.http: 'INFO'
+    org.apache.http.headers: 'DEBUG'
+    org.apache.http.wire: 'INFO'
 
 pdf:
   renderApi: 'http://py3o.docker-machine.epages.works:8765/form'
