@@ -6,6 +6,7 @@ import static com.fasterxml.jackson.databind.SerializationFeature.WRITE_DATES_AS
 
 import java.util.Locale;
 
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.boot.SpringApplication;
@@ -25,7 +26,15 @@ public class PdfRenderApplication implements Jackson2ObjectMapperBuilderCustomiz
 
     @Bean(destroyMethod = "close")
     public CloseableHttpClient httpClient() {
-        return HttpClientBuilder.create().build();
+        int timeout = 5;
+        RequestConfig config = RequestConfig.custom() //
+                .setConnectTimeout(timeout * 1000) //
+                .setConnectionRequestTimeout(timeout * 1000) //
+                .setSocketTimeout(timeout * 1000).build();
+
+        return HttpClientBuilder.create() //
+                .setDefaultRequestConfig(config) //
+                .build();
     }
 
     @Override
