@@ -1,0 +1,15 @@
+spring:
+  main:
+    banner-mode: 'off'
+
+logging:
+  level:
+    root: 'INFO'
+    org.springframework: 'WARN'
+    com.epages.pdf: 'INFO'
+
+pdf:
+  renderApi: 'http://py3o.docker-machine.epages.works:8765/form'
+  template: 'invoice/invoice.odt'
+  logo: 'invoice/test.png'
+  imageMapping: 'invoice/image_mapping.json'
