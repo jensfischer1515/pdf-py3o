@@ -1,0 +1,31 @@
+{
+    "items": [
+      {
+        "InvoiceRef": "#1",
+        "Amount": 89.97,
+        "Currency": "EUR",
+        "val1": "Trousers",
+        "val2": "nice fit",
+        "val3": 39.99
+      },
+      {
+        "InvoiceRef": "#2",
+        "Amount": 89.97,
+        "Currency": "EUR",
+        "val1": "T-Shirt",
+        "val2": "V neck",
+        "val3": 19.99
+      },
+      {
+        "InvoiceRef": "#1234",
+        "Amount": 89.97,
+        "Currency": "EUR",
+        "val1": "Hoodie",
+        "val2": "cool style",
+        "val3": 29.99
+      }
+    ],
+    "document": {
+        "total": 89.97
+    }
+}
