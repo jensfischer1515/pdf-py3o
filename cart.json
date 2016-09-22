@@ -34,7 +34,78 @@
                 "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/line-items/0b177989-37e3-4688-9c50-0d12d94ff587"
             }
         }
+    }, {
+        "_type": "PRODUCT",
+        "_id": "0b177989-37e3-4688-9c50-0d12d94ff587",
+        "_ref": "ffe58227-7e82-4643-8ff2-f74de3acd334",
+        "name": "Moscovium",
+        "details": {
+            "sku": "115_Mc",
+            "essentialFeatures": "essential features",
+            "_links": {
+                "product": {
+                    "href": "http://localhost/$%7Bng.api-base-path/product-view/products/ffe58227-7e82-4643-8ff2-f74de3acd334?locale=de-DE"
+                },
+                "default-image-data": {
+                    "href": "http://localhost/api/storage/images/P7120104.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
+                    "templated": true
+                }
+            }
+        },
+        "quantity": {
+            "value": 1,
+            "unit": "PIECE"
+        },
+        "singleItemPrice": {
+            "taxModel": "NET",
+            "amount": "EUR 49.99"
+        },
+        "lineItemPrice": {
+            "taxModel": "NET",
+            "amount": "EUR 49.99"
+        },
+        "_links": {
+            "self": {
+                "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/line-items/0b177989-37e3-4688-9c50-0d12d94ff587"
+            }
+        }
+    }, {
+        "_type": "PRODUCT",
+        "_id": "0b177989-37e3-4688-9c50-0d12d94ff587",
+        "_ref": "ffe58227-7e82-4643-8ff2-f74de3acd334",
+        "name": "Moscovium",
+        "details": {
+            "sku": "115_Mc",
+            "essentialFeatures": "essential features",
+            "_links": {
+                "product": {
+                    "href": "http://localhost/$%7Bng.api-base-path/product-view/products/ffe58227-7e82-4643-8ff2-f74de3acd334?locale=de-DE"
+                },
+                "default-image-data": {
+                    "href": "http://localhost/api/storage/images/P7120104.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
+                    "templated": true
+                }
+            }
+        },
+        "quantity": {
+            "value": 1,
+            "unit": "PIECE"
+        },
+        "singleItemPrice": {
+            "taxModel": "NET",
+            "amount": "EUR 49.99"
+        },
+        "lineItemPrice": {
+            "taxModel": "NET",
+            "amount": "EUR 49.99"
+        },
+        "_links": {
+            "self": {
+                "href": "http://localhost/carts/762e5a02-68e7-423c-867b-97a9df6684c4/line-items/0b177989-37e3-4688-9c50-0d12d94ff587"
+            }
+        }
     }],
+    "hasShippingLineItem": true,
     "shippingLineItem": {
         "shippingMethod": {
             "name": "Fedex",
@@ -44,7 +115,9 @@
                 "taxModel": "NET",
                 "amount": "EUR 2.00"
             },
-            "serviceableCountries": ["US"],
+            "serviceableCountries": [
+                "US"
+            ],
             "freeShippingAmount": null,
             "_id": "1d075427-084e-4c39-b6f7-619851790a63"
         },
@@ -53,6 +126,7 @@
             "amount": "EUR 2.00"
         }
     },
+    "hasPaymentLineItem": true,
     "paymentLineItem": {
         "paymentMethod": {
             "name": "Pay me",
@@ -67,7 +141,9 @@
                 "percentageValue": null
             },
             "position": 1,
-            "serviceableCountries": ["US"],
+            "serviceableCountries": [
+                "US"
+            ],
             "minimumOrderValue": null,
             "_id": "b3a743ee-b7eb-49b3-8aff-efa287652c9f"
         },
