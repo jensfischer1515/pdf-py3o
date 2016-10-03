@@ -38,10 +38,10 @@
         "_type": "PRODUCT",
         "_id": "0b177989-37e3-4688-9c50-0d12d94ff587",
         "_ref": "ffe58227-7e82-4643-8ff2-f74de3acd334",
-        "name": "Moscovium",
+        "name": "Trousers",
         "details": {
-            "sku": "115_Mc",
-            "essentialFeatures": "essential features",
+            "sku": "116_Tr",
+            "essentialFeatures": "loose fit",
             "_links": {
                 "product": {
                     "href": "http://localhost/$%7Bng.api-base-path/product-view/products/ffe58227-7e82-4643-8ff2-f74de3acd334?locale=de-DE"
@@ -58,11 +58,11 @@
         },
         "singleItemPrice": {
             "taxModel": "NET",
-            "amount": "EUR 49.99"
+            "amount": "EUR 69.99"
         },
         "lineItemPrice": {
             "taxModel": "NET",
-            "amount": "EUR 49.99"
+            "amount": "EUR 69.99"
         },
         "_links": {
             "self": {
@@ -73,10 +73,10 @@
         "_type": "PRODUCT",
         "_id": "0b177989-37e3-4688-9c50-0d12d94ff587",
         "_ref": "ffe58227-7e82-4643-8ff2-f74de3acd334",
-        "name": "Moscovium",
+        "name": "Shirt",
         "details": {
-            "sku": "115_Mc",
-            "essentialFeatures": "essential features",
+            "sku": "117_Sh",
+            "essentialFeatures": "total cool color",
             "_links": {
                 "product": {
                     "href": "http://localhost/$%7Bng.api-base-path/product-view/products/ffe58227-7e82-4643-8ff2-f74de3acd334?locale=de-DE"
@@ -88,16 +88,16 @@
             }
         },
         "quantity": {
-            "value": 1,
+            "value": 2,
             "unit": "PIECE"
         },
         "singleItemPrice": {
             "taxModel": "NET",
-            "amount": "EUR 49.99"
+            "amount": "EUR 19.99"
         },
         "lineItemPrice": {
             "taxModel": "NET",
-            "amount": "EUR 49.99"
+            "amount": "EUR 39.98"
         },
         "_links": {
             "self": {
@@ -198,7 +198,7 @@
     },
     "total": {
         "taxModel": "NET",
-        "amount": "EUR 53.99"
+        "amount": "EUR 163.96"
     },
     "minimumOrderValue": {
         "taxModel": "NET",
